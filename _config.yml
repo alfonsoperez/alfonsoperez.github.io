@@ -1,0 +1,12 @@
+# Site settings
+title: Alfonso Perez
+email: alfon@ratslap.com
+description: > # this means to ignore newlines until "baseurl:"
+  Passionate software engineer wanna-be, traveler, surfer.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://alfonsoperez.github.io" # the base hostname & protocol for your site
+twitter_username: alfonsopereze
+github_username:  alfonsoperez
+
+# Build settings
+markdown: kramdown
