@@ -2,7 +2,7 @@
 layout: post
 title:  "Testing with Slim Framework ~Modifying Request body"
 date:   2015-07-16 00:08:02
-categories: jekyll update
+categories: php development
 ---
 
 I while ago I was setting up a test environment on a PHP project that was using [Slim Framework](http://www.slimframework.com/) and found that had to do some digging in order to find a couple of features.
