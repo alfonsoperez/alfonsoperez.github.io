@@ -87,7 +87,7 @@ So basically if the name has something like an áccent, or an ñ, actually reall
 
 #### Religious Avatars
 
-This is the funniest part. It turns out that this social network, as every other cool social network has to have an avatar for their users, so let's register avatar for our users.
+This is the funniest part. Ok I'll say it!, it turns out that this social network, as every other cool social network has to have an avatar for their users, so let's register avatar for our users.
 
 As this social network in particular is Religion-themed, we want our bots to be religious as well.
 
