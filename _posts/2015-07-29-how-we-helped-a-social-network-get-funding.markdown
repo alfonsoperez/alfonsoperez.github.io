@@ -5,7 +5,7 @@ date:   2015-07-29 00:08:02
 categories: web hacking
 ---
 
-Yesterday I bumped into an old friend from University in Facebook, [@BobString](https://twitter.com/BobString), and the conversation ended up remembering one of the many **funny stories** [@jacano35](https://twitter.com/jacano35), [@zNk](https://twitter.com/zNk) and I had been involved in **during our college time**, in fact, recently I had the luck to meet some of these guys and we laughing so hard remembering some of these stories than it may turn into a blog post series, just to immortalize them.  
+Yesterday I bumped into an old friend from University in Facebook, [@BobString](https://twitter.com/BobString), and the conversation ended up remembering one of the many **funny stories** [@jacano35](https://twitter.com/jacano35), [@zNk](https://twitter.com/zNk) and I had been involved in **during our college time**, in fact, recently I had the luck to meet some of these guys and we spent the night laughing so hard remembering some of these stories than it may turn into a blog post series, just to immortalize them.  
 
 The main story in this post, as stated in the title, is *how we inadvertently helped a Social Network get funding*,... by sort of hacking it.
 
