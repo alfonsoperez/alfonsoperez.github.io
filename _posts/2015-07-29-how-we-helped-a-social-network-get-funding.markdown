@@ -13,7 +13,7 @@ When I say *sort of* it's because:
 
 > No cats died during the course of this story, nor the intention was to harm the company in any way, it was just for the lulz
 
-This beggins with me going *WTF?!?!* on a Facebook post of an old friend promoting a *unusual* social network (can't say more as I think it's the only one of it's kind).
+This one begins with me going *WTF?!?!* on a Facebook post of an old friend promoting a *unusual* social network (can't say more as I think it's the only one of it's kind).
 
 > \- Hey [@jacano35](https://twitter.com/jacano35), I have an idea, how about if we troll these guys a little?
 > \- Yeah, sure, why not?
