@@ -5,7 +5,7 @@ date:   2015-07-29 00:08:02
 categories: web hacking
 ---
 
-Yesterday I bumped into an old friend from University in Facebook, [@BobString](https://twitter.com/BobString), and the conversation ended up remembering one of the many **funny stories** [@jacano35](https://twitter.com/jacano35), [@zNk](https://twitter.com/zNk) and I had been involved in **during our college time**, in fact, recently I had the luck to meet some of these guys and we spent the night laughing so hard remembering some of these stories than it may turn into a blog post series, just to immortalize them.  
+Yesterday I bumped into an old friend from University in Facebook, [@BobString](https://twitter.com/BobString), and the conversation ended up remembering one of the many **funny stories** [@jacano35](https://twitter.com/jacano35), [@zNk](https://twitter.com/zNk) and I had been involved in **during our college time**, in fact, recently I had the luck to meet some of these guys and we spent the night laughing so hard remembering some of these stories than it may turn into a blog post series, just to immortalize them.
 
 The main story in this post, as stated in the title, is *how we inadvertently helped a Social Network get funding*,... by sort of hacking it.
 
@@ -83,14 +83,14 @@ $city = $cds[rand(0,count($cds)-1)];
 {% endhighlight %}
 
 
-So basically if the name has something like an áccent, or an ñ, actually really common in spanish, I strip it, thus inserting "lvaro" instead of "Álvaro", resulting later in **a lot of bots** with weird names, duh. 
+So basically if the name has something like an áccent, or an ñ, actually really common in spanish, I strip it, thus inserting "lvaro" instead of "Álvaro", resulting later in **a lot of bots** with weird names, duh.
 Let alone not getting the location from fakenamegenerator but creating my cursom random one out of an array, anyway.
 
 #### Religious Avatars
 
-This is the funniest part. Ok I'll say it!, it turns out that this social network, as every other cool social network has to have an avatar for their users, so let's register avatar for our users.
+This is the funniest part. Ok I'll say it!, this social network is "Religion-thened", and it turns out that, this social network, as every other cool social network has to have an avatar for their users, so let's register avatar for our users.
 
-As this social network in particular is Religion-themed, we want our bots to be religious as well.
+Of course now we want our bots to be religious as well.
 
 {% highlight php %}
 <?php
@@ -115,7 +115,7 @@ if(!isset($buf[1]))
    $res = "http://www.diomedes.com/gua-vestida-virgen.jpg";
    else
    $res = $buf[1];
-   
+
    return $res;
 
 
@@ -149,7 +149,7 @@ function handler($sig)
 for($i=0;$i<=$num;$i++)
 {
     $pid = pcntl_fork();
-    if($pid == -1) exit(-1); 
+    if($pid == -1) exit(-1);
     elseif($pid == 0)
     {
         $pids[] = getmypid();
@@ -183,7 +183,7 @@ while(1)
 
     fwrite($fd, $email." ".$pass."\n");
 }
-fclose($fd);
+fclose($fd); // <---- yeah right
 {% endhighlight %}
 
 Hit `php5 processes.php 6` and went to sleep, after getting insulted many times by [@jacano35](https://twitter.com/jacano35) because of the horrid thing above and for not running it through tor. Anyway, I was tired, here you have my IP Address.
@@ -195,7 +195,7 @@ Next morning I wake up late, with a little hangover and I suddenly remember what
 
 As with almost everything we did for fun, we didn't take it further and we just **upped some messages to the all-time top 2**, did some random followings, some messages, and little more, we could have easily created *havoc*, but then apart from script-kiddies we would be [lamers](https://en.wikipedia.org/wiki/Lamer).
 
-The funny part of the story is that after a while I saw some articles in newspapers talking about the social network, and the owners of it were talking about the *rapid rise* of their userbase and how they had around 100,000K users, I couldn't resist to laugh when I skimmed through my files and realized that I may had almost half of their userbase. 
-After that, as I had the first test account registered with my personal e-mail I kept getting eventual e-mails from them through the months, and witnessed how they got to hire some developers, developed and app for android and ios, and given the rapid popularity their userbase started to skyrocket. 
+The funny part of the story is that after a while I saw some articles in newspapers talking about the social network, and the owners of it were talking about the *rapid rise* of their userbase and how they had around 100,000K users, I couldn't resist to laugh when I skimmed through my files and realized that I may had almost half of their userbase.
+After that, as I had the first test account registered with my personal e-mail I kept getting eventual e-mails from them through the months, and witnessed how they got to hire some developers, developed and app for android and ios, and given the rapid popularity their userbase started to skyrocket.
 
 Good for them!
