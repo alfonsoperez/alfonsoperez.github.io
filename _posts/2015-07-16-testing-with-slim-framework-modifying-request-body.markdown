@@ -7,7 +7,9 @@ categories: php development
 
 I while ago I was setting up a test environment on a PHP project that was using [Slim Framework](http://www.slimframework.com/) and found that had to do some digging in order to find a couple of features.
 
-In particular, I wanted to be able to modify the request body on a mocked Slim environment. For instance, let's imagine that we want to send a POST request with parameters, like this:
+In particular, I wanted to be able to modify the request body on a mocked Slim environment, the docs were't of help so I though I would share this.
+
+For instance, let's imagine that we want to send a POST request with parameters, like this:
 
 {% highlight php %}
 <?php
@@ -15,7 +17,7 @@ namespace Ourproject\Tests;
 // We manage our dependencies with Composer
 require_once __DIR__. '/../vendor/autoload.php';
 
-class ExampleTest extends IntegrationTest 
+class ExampleTest extends IntegrationTest
 {
     public function testSendForm()
     {
@@ -46,7 +48,7 @@ class IntegrationTest extends \PHPUnit_Framework_TestCase {
         ob_start();
 
         // Prepare a mock environment
-        
+
         \Slim\Environment::mock(array_merge(array(
             'REQUEST_METHOD' => $method,
             'SERVER_PORT' => '80',
@@ -54,9 +56,9 @@ class IntegrationTest extends \PHPUnit_Framework_TestCase {
             'SERVER_NAME' => 'our.server.dev',
         ), $options));
 
- 
+
         // Run the application
-        // this creates an Slim $app 
+        // this creates an Slim $app
         require __DIR__ . '/../../public/bootstrap.php';
 
         $this->app = $app;
