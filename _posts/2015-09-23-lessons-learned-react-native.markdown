@@ -10,7 +10,7 @@ This post is intended to be updated while going through the beautiful path of *w
 
 # App animations are going slow
 
-Well this can happen for a variety of reasons, the ones I have encountered so far can be split into the following categories.
+Well this can happen for a variety of reasons, the ones I have encountered so far can be split into the following categories:
 
 ### Animations are not going smooth
 
@@ -24,8 +24,8 @@ var NewScene = React.createClass({
     return (
         <View>
             <MapView
-                ...
-            >
+
+            />
         </View>
     );
    }
