@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lessons learned react native"
+title:  "React Native: Lessons learned"
 date:   2015-07-23 00:08:02
 categories: php development
 ---
