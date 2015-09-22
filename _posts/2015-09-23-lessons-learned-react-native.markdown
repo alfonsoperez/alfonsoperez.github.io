@@ -8,11 +8,11 @@ categories: php development
 This post is intended to be updated while going through the beautiful path of *writing mobile apps* with React Native.
 
 
-# App animations are going slow
+### App animations are going slow
 
 Well this can happen for a variety of reasons, the ones I have encountered so far can be split into the following categories:
 
-### Animations are not going smooth
+# Animations are not going smooth
 
 When, for example, you are using [Navigator](https://facebook.github.io/react-native/docs/navigator.html), and while pushing a new Route, you see that the animation is everything but smooth, then it's probably because there is some heavy task being performed within the new Scene being rendered, for instance, imagine that we are pushing a scene with a MapView, and we see that when _sliding_ to that scene, everything goes slow.
 
