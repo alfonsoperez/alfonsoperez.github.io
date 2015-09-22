@@ -8,7 +8,7 @@ categories: php development
 This post is intended to be updated while going through the beautiful path of *writing mobile apps* with React Native.
 
 
-### App animations are going slow
+#### App animations are going slow
 
 Well this can happen for a variety of reasons, the ones I have encountered so far can be split into the following categories:
 
