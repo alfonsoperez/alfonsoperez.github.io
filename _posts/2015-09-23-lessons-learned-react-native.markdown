@@ -2,7 +2,7 @@
 layout: post
 title:  "React Native: Lessons learned"
 date:   2015-09-23 00:08:02
-categories: php development
+categories: javascript mobile development react react-native
 ---
 
 This post is intended to be updated while going through the beautiful path of *writing mobile apps* with React Native.
