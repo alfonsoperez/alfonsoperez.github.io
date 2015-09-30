@@ -34,9 +34,15 @@ var NewScene = React.createClass({
 });
 {% endhighlight %}
 
-Thankfully, we can make use of InteractionManager API that allows us to schedule tasks after the animations are completed, so:
+So in order not to block the UI, we could perform those heavy tasks asynchronously with a [setTimeout](https://rnplay.org/apps/pALAlg), but thankfully, we can make use of [InteractionManager](https://facebook.github.io/react-native/docs/interactionmanager.html) API that allows us to schedule tasks after the animations are completed.
+
+So, hooking the call into a [lifecycle method](https://facebook.github.io/react/docs/component-specs.html) like [componentWillMount](https://facebook.github.io/react/docs/component-specs.html#mounting-componentwillmount), which is invoked only one
 
 {% highlight javascript %}
+const {
+  ,...
+  InteractionManager,
+}           = require('react-native');
 ...
 var NewScene = React.createClass({
    getInitialState: function() {
@@ -44,13 +50,12 @@ var NewScene = React.createClass({
         showMap: false,
     }
    },
+   componentWillMount: function() {
+    InteractionManager.runAfterInteractions(() => {
+      this.setState({showMaps: true})
+    });
+   },
    render: function() {
-
-    if (this.state.showMaps === false) {
-      InteractionManager.runAfterInteractions(() => {
-        this.setState({showMaps: true});
-      });
-    }
 
     if(this.state.showMaps) {
         return (
@@ -65,7 +70,6 @@ var NewScene = React.createClass({
 });
 {% endhighlight %}
 
-Don't forget to set a flag so you only run `InteractionManager.runAfterInteractions` once, if not horrible things will happen!.
-
+Don't forget to _at least_ set a flag if you are making the call directly in _render()_ so you only run `InteractionManager.runAfterInteractions` once, if not horrible things will happen!.
 
 [ To be continued. ]
