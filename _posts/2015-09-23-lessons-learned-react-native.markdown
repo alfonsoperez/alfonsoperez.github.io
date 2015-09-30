@@ -78,3 +78,5 @@ Don't forget to _at least_ set a flag if you are making the call directly in _re
 All right, then you probably have hit Cmd + T and enabled _slow animations_, to disable it!.
 
 ![Slow animations React Native](/images/posts/slowanimations.gif){:.center-image .responsive-image }
+
+[To be continued.]
