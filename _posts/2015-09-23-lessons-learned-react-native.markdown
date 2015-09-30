@@ -72,4 +72,9 @@ var NewScene = React.createClass({
 
 Don't forget to _at least_ set a flag if you are making the call directly in _render()_ so you only run `InteractionManager.runAfterInteractions` once, if not horrible things will happen!.
 
-[ To be continued. ]
+   Wait.. but I am not doing anything wrong and the animations are just going really slow
+=
+
+All right, then you probably have hit Cmd + T and enabled _slow animations_, to disable it!.
+
+![Slow animations React Native](/images/posts/slowanimations.gif){:.center-image .responsive-image }
