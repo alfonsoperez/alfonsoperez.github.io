@@ -5,7 +5,7 @@ date:   2015-07-16 00:08:02
 categories: php development
 ---
 
-I while ago I was setting up a test environment on a PHP project that was using [Slim Framework](http://www.slimframework.com/) and found that had to do some digging in order to find a couple of features.
+I while ago I was setting up a test environment on a [PHP project](https://github.com/alfonsoperez/easy-php-forms) that used [Slim Framework](http://www.slimframework.com/) and found that had to do some digging in order to find a couple of features.
 
 In particular, I wanted to be able to modify the request body on a mocked Slim environment, the docs were't of help so I though I would share this.
 
