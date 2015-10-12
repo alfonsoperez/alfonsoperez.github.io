@@ -16,7 +16,7 @@ Well this can happen for a variety of reasons, the ones I have encountered so fa
    Animations are not going smooth
 =
 
-When, for example, you are using [Navigator](https://facebook.github.io/react-native/docs/navigator.html), and while pushing a new Route, you see that the animation is everything but smooth, then it's probably because there is some heavy task being performed within the new Scene being rendered, for instance, imagine that we are pushing a scene with a MapView, and we see that when _sliding_ to that scene, everything goes slow.
+When, for example, you are using [Navigator](https://facebook.github.io/react-native/docs/navigator.html), and while pushing a new Route, you see that the animation is everything but smooth, then it's probably because there is some heavy task being performed within the new Scene being rendered syncronously and thus blocking our thread, for instance, imagine that we are pushing a scene with a MapView, and we see that when _sliding_ to that scene, everything goes slow.
 
 {% highlight javascript %}
 ...
