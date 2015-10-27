@@ -84,7 +84,7 @@ $city = $cds[rand(0,count($cds)-1)];
 
 
 So basically if the name has something like an áccent, or an ñ, actually really common in spanish, I strip it, thus inserting "lvaro" instead of "Álvaro", resulting later in **a lot of bots** with weird names, duh.
-Let alone not getting the location from fakenamegenerator but creating my cursom random one out of an array, anyway.
+Let alone not getting the location from fakenamegenerator but creating my custom random one out of an array, anyway.
 
 #### Religious Avatars
 
