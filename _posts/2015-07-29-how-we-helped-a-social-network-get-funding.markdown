@@ -28,7 +28,7 @@ We stumble at the registration form, which at the time looked like this:
 > \- Dude, shut up and let's code, these guys are noobz
 
 ##  First step: Creating our bots
-All right, so If we are creating a *botnet*, we need bots, right?. So let's get out **Script-Kiddie's Hat** and now that we talk about this, let's get a decent number of them, but without raising suspicions, as we want to succeed in our trolling. This means that the profiles of our bots need to be somehow convincing. But for now let's quickly sort the registration feature.
+All right, so If we are creating a *botnet*, we need bots, right?. So let's get our **Script-Kiddie's Hat** and now that we talk about this, let's get a decent number of them, but without raising suspicions, as we want to succeed in our trolling. This means that the profiles of our bots need to be somehow convincing. But for now let's quickly sort the registration feature.
 
 #### Registering users
 We, don't know yet if these guys use some kind of e-mail activation, which would be nice, but before filling our mail server with junk mail, we are going to see if registering ourselves... and *Voila!*, **no activation mail!**, is it going to be that easy?.
