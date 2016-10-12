@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Hi there!, my name is Alfonso, and I am a passionate software engineer wanna-be from Spain. I enjoy web app security, writing code, and non-ball related sports.
+Hi there!, my name is Alfonso, and I am a passionate software engineer wanna-be from Spain, currently based in the beautiful city of San Francisco, in California.
+
+I enjoy web app security, writing code, and non-ball related sports.
 
 I will be updating this site with some things that bother me, or with things that I like!.
 
