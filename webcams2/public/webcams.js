@@ -8,8 +8,10 @@ var execute = function() {
   fetch(URL_SERVER).then(res => res.json()).then(res => {
     var zones = res.zones.sf;
     var video = document.createElement("video");
-    video.src = zones[0];
-    video.autoplay = true;
+    var source = document.createElement("source");
+    source.src = zones[0];
+    source.type = "application/x-mpegURL";
+    video.appendChild(source);
     container.appendChild(video);
   });
 };
