@@ -16,7 +16,9 @@ var execute = function() {
     video.poster = "//vjs.zencdn.net/v/oceans.png";
     video.controls = false;
     video.preload = "auto";
-    source.src = zones[0];
+    // source.src = zones[0];
+    source.src =
+      "http://5flix.cdn.octivid.com/vod/_definst_/smil:2017-03-29/studioZWWMH.smil/playlist.m3u8";
     source.type = "application/x-mpegURL";
     video.appendChild(source);
     container.appendChild(video);
