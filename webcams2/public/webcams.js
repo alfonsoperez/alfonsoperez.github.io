@@ -9,6 +9,7 @@ var execute = function() {
     var zones = res.zones.sf;
     var video = document.createElement("video");
     var source = document.createElement("source");
+    video["data-setup"] = "{}";
     source.src = zones[0];
     source.type = "application/x-mpegURL";
     video.appendChild(source);
