@@ -9,6 +9,7 @@ var execute = function() {
     var zones = res.zones.sf;
     var video = document.createElement("video");
     var source = document.createElement("source");
+    video.id = "video-element";
     video["data-setup"] = '{"fluid": true,"playbackRates": [1, 1.5, 2] }';
     video.class = "video-js vjs-default-skin";
     video.poster = "//vjs.zencdn.net/v/oceans.png";
@@ -18,6 +19,9 @@ var execute = function() {
     source.type = "application/x-mpegURL";
     video.appendChild(source);
     container.appendChild(video);
+
+    let player = videojs("video-element");
+    player.play();
   });
 };
 
