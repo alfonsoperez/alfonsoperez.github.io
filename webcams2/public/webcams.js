@@ -9,9 +9,13 @@ var execute = function() {
     var zones = res.zones.sf;
     var video = document.createElement("video");
     var source = document.createElement("source");
-    video["data-setup"] = "{}";
+    video["data-setup"] = '{"fluid": true,"playbackRates": [1, 1.5, 2] }';
     video.width = 640;
     video.height = 264;
+    video.class = "video-js vjs-default-skin";
+    video.poster = "//vjs.zencdn.net/v/oceans.png";
+    video.controls = false;
+    video.preload = "auto";
     source.src = zones[0];
     source.type = "application/x-mpegURL";
     video.appendChild(source);
