@@ -10,6 +10,8 @@ var execute = function() {
     var video = document.createElement("video");
     var source = document.createElement("source");
     video["data-setup"] = "{}";
+    video.width = 640;
+    video.height = 264;
     source.src = zones[0];
     source.type = "application/x-mpegURL";
     video.appendChild(source);
