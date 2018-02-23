@@ -1,1 +1,34 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"><title>Ocean Beach Cam</title><link href="static/css/main.ab74118c.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app :-(.</noscript><div id="root"></div><script type="text/javascript" src="static/js/main.5da135a4.js"></script></body></html>
+<html>
+
+<head>
+  <link rel="manifest" href="/manifest.json">
+  <title>Webcams</title>
+</head>
+
+<body>
+  <div id="webcams-container">
+    <video id="video" autoplay class="videoCentered"></video>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script>
+    function getFeedUrl() {
+      return fetch("http://46.101.78.159:8080/4127")
+        .then(r => r.json())
+        .then(r => r.url);
+    }
+
+    getFeedUrl().then(feedUrl => {
+      if (Hls.isSupported()) {
+        var video = document.getElementById("video");
+        var hls = new Hls();
+        hls.loadSource(feedUrl);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, function () {
+          video.play();
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
